@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".CreateNote"
+    android:background="@color/white">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADDAD2D2"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:background="#ADDAD2D2"
+        android:hint="Enter note title here"
+        android:textColorHint="#858585"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="28dp"
+        android:background="#ADDAD2D2"
+        android:gravity="start"
+        android:hint="Enter note detail text here"
+        android:textColorHint="#858585"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextTitle"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        app:icon="@android:drawable/ic_menu_save"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextMessage"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+
+        app:layout_constraintLeft_toRightOf="@id/buttonSave"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
