@@ -22,6 +22,14 @@ class CreateNote : AppCompatActivity() {
         createNoteBinding = ActivityCreateNoteBinding.inflate(layoutInflater)
         setContentView(createNoteBinding.root)
 
+        /*
+        kxjczvnkjncxvkjzxcvzxcv
+        zxcvzxcvzxcvzxcvzxcvmzxcnvlkzxcvklnzxkcvnkzxncv
+        zcxv;lmzxclvmlzxkcmvlkmczxlvkzxcv
+        zxcvl;,z;lv,zl;x,cv;lz,cvl;zxcv
+        zxcvl,zxc;lv,z;xlcv,zlx;cv,zxc
+        vcxvzcxvzxvczxcvzxcv
+         */
         //List For Add The Spinner
         val groups = arrayOf(
             "Uncategorized",
